@@ -55,3 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 2000); // Full transformation after 2s
     });
 });
+
+// Automatically update the copyright year
+document.addEventListener("DOMContentLoaded", function () {
+    const yearSpan = document.getElementById("year");
+    yearSpan.textContent = new Date().getFullYear();
+});
